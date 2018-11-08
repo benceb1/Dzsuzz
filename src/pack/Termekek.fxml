@@ -10,6 +10,6 @@
    <children>
       <ListView fx:id="lvTermekek" layoutX="14.0" layoutY="14.0" prefHeight="469.0" prefWidth="200.0" />
       <TableView fx:id="tvTermekek" layoutX="233.0" layoutY="14.0" prefHeight="469.0" prefWidth="354.0" />
-      <Button fx:id="btnTermekTorles" layoutX="247.0" layoutY="495.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="107.0" text="Törles" />
+      <Button onAction="#termekTorles" layoutX="247.0" layoutY="495.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="107.0" text="Törles" />
    </children>
 </AnchorPane>

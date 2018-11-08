@@ -8,32 +8,31 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pack.Controller">
    <children>
-      <ListView layoutX="25.0" layoutY="112.0" prefHeight="200.0" prefWidth="200.0" />
-      <ListView layoutX="240.0" layoutY="112.0" prefHeight="200.0" prefWidth="200.0" />
-      <ListView layoutX="461.0" layoutY="112.0" prefHeight="200.0" prefWidth="200.0" />
-      <TextField layoutX="25.0" layoutY="72.0" prefHeight="31.0" prefWidth="200.0" />
-      <Button layoutX="461.0" layoutY="72.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="200.0" text="Button" />
+      <ListView fx:id="lvNevek" layoutX="15.0" layoutY="88.0" prefHeight="413.0" prefWidth="210.0" />
+      <ListView fx:id="lvTermekek" layoutX="238.0" layoutY="88.0" prefHeight="413.0" prefWidth="210.0" />
+      <ListView fx:id="lvKosar" layoutX="461.0" layoutY="89.0" prefHeight="413.0" prefWidth="210.0" />
+      <TextField fx:id="tfNev" layoutX="15.0" layoutY="47.0" prefHeight="31.0" prefWidth="210.0" />
+      <Button layoutX="466.0" layoutY="47.0" mnemonicParsing="false" onAction="#hozzaad" prefHeight="31.0" prefWidth="200.0" text="Hozzáad" />
       <MenuBar prefHeight="32.0" prefWidth="685.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+                <MenuItem mnemonicParsing="false" onAction="#ujTermek" text="Új termék" />
+                <MenuItem mnemonicParsing="false" onAction="#termekek" text="Termékek" />
+              <MenuItem mnemonicParsing="false" onAction="#kilep" text="Close" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
+
         </menus>
       </MenuBar>
+      <RadioButton fx:id="rbKicsi" layoutX="266.0" layoutY="52.0" mnemonicParsing="false" text="Kicsi">
+          <toggleGroup>
+              <ToggleGroup fx:id="meret" />
+          </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbNagy" layoutX="348.0" layoutY="52.0" mnemonicParsing="false" text="Nagy" toggleGroup="$meret" />
+      <Button layoutX="575.0" layoutY="518.0" mnemonicParsing="false" onAction="#kosarKesz" prefHeight="31.0" prefWidth="78.0" text="Kész" />
+      <Button layoutX="484.0" layoutY="518.0" mnemonicParsing="false" onAction="#kosarTorles" prefHeight="31.0" prefWidth="78.0" text="Törlés" />
    </children>
 </AnchorPane>

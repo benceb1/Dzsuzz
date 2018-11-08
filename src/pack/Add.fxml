@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pack.AddController">
+   <children>
+      <TextField fx:id="tfNev" layoutX="11.0" layoutY="21.0" prefHeight="31.0" prefWidth="278.0" promptText="Termék neve" />
+      <TableView fx:id="tvElemek" editable="true" layoutX="11.0" layoutY="64.0" prefHeight="479.0" prefWidth="278.0" />
+      <Button onAction="#hozzaad" layoutX="16.0" layoutY="555.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="267.0" text="Hozzáad" />
+   </children>
+</AnchorPane>
