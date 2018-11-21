@@ -1,5 +1,6 @@
 package pack;
 
+import java.util.Date;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,11 +13,10 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Dzsuz");
-
-        primaryStage.setScene(new Scene(root, 685, 509));
+      
+        primaryStage.setScene(new Scene(root, 685, 563));
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);

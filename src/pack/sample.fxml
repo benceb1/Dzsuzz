@@ -20,8 +20,10 @@
           <Menu mnemonicParsing="false" text="File">
             <items>
                 <MenuItem mnemonicParsing="false" onAction="#ujTermek" text="Új termék" />
+                <MenuItem mnemonicParsing="false" onAction="#eladasok" text="Eladások" />
                 <MenuItem mnemonicParsing="false" onAction="#termekek" text="Termékek" />
-              <MenuItem mnemonicParsing="false" onAction="#kilep" text="Close" />
+                <MenuItem mnemonicParsing="false" onAction="#termeles" text="Termelés" />
+              <MenuItem mnemonicParsing="false" onAction="#kilep" text="Bezár" />
             </items>
           </Menu>
 
